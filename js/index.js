@@ -30,6 +30,7 @@ function znikanie(element, index, array) {
 }
 
 var shopsButton = [InterMarche, CCC, PepCo, NeoNet, MartesSport];
+
 var InterMarcheButton = document.getElementById("InterMarche");
 var elementyInterMarche = [InterMarcheGora, InterMarcheBok, InterMarchePrzod];
 
@@ -111,7 +112,7 @@ NeoNet.addEventListener("click", function () {
 });
 
 var PepCoButton = document.getElementById("PepCo");
-var elementyPepCo = [PepCoGora, PepCoBok, PepCoPrzod];
+var elementyPepCo = [PepCoGora, PepCoBok, PepCoPrzod]; //these are 3 elements from SVG that define one shop
 
 PepCo.addEventListener("click", function () {
 
@@ -137,3 +138,43 @@ MartesSportX.addEventListener("click", function () {
         MartesSportInfo.classList.add("zniknij");
 });
 });
+
+var NeoNetX = document.getElementById("NeoNetX"); 
+NeoNetX.addEventListener("click", function () {
+    elementyNeoNet.forEach(function (element, index, array) {
+        element.classList.add("moveUp");
+        NeoNetInfo.classList.add("zniknij");
+});
+});
+
+var IntermarcheX = document.getElementById("IntermarcheX"); 
+IntermarcheX.addEventListener("click", function () {
+    elementyInterMarche.forEach(function (element, index, array) {
+        element.classList.add("moveUp");
+        InterMarcheInfo.classList.add("zniknij");
+});
+});
+
+var CCCX = document.getElementById("CCCX"); 
+CCCX.addEventListener("click", function () {
+    elementyCCC.forEach(function (element, index, array) {
+        element.classList.add("moveUp");
+        CCCInfo.classList.add("zniknij");
+});
+});
+
+var PepCoX = document.getElementById("PepCoX"); 
+PepCoX.addEventListener("click", function () {
+    elementyPepCo.forEach(function (element, index, array) {
+        element.classList.add("moveUp");
+        PepCoInfo.classList.add("zniknij");
+});
+});
+
+// switch (element) {
+// case 1: if (element.classList.contains("moveDown")) {
+//     ShopsButton.classList.remove("moveDown");
+//     element.classList.add("moveDown")}
+//     break;
+// case 2: 
+// }
