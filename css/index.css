@@ -1,0 +1,47 @@
+.moveDown {
+    animation: moveDown 1s;
+    fill: white;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveDown {
+    0% {
+        stroke: black;
+        fill: white;
+        transform: translateY(0px)
+    }
+
+    100% {
+        stroke: black;
+        fill: rgba(235, 164, 13, 0.76);
+        transform: translateY(5px);
+    }
+}
+
+.moveUp {
+    animation: moveUp 1s;
+    fill: white;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        stroke: black;
+        fill: rgba(235, 164, 13, 0.76);
+        transform: translateY(5px);
+    }
+
+    100% {
+        stroke: black;
+        fill: white;
+        transform: translateY(0px);
+    }
+}
+
+.zniknij {
+    display: none;
+}
+
+.HoverX:hover {
+    cursor: pointer;
+}
