@@ -30,8 +30,9 @@ function znikanie(element, index, array) {
 }
 
 var shopsButton = [InterMarche, CCC, PepCo, NeoNet, MartesSport];
+var shopsButtons = [[InterMarcheGora, InterMarchePrzod, InterMarcheBok], [CCCBok, CCCBok, CCCPrzod], [PepCoBok, PepCoGora, PepCoPrzod], [NeoNetPrzod, NeoNetGora, NeoNetBok], [MartesSportBok, MartesSportGora, MartesSportPrzod]]; 
+var elementsNoNeoNet = [elementyPepCo, elementyCCC, elementyInterMarche, elementyMartesSport]
 
-var InterMarcheButton = document.getElementById("InterMarche");
 var elementyInterMarche = [InterMarcheGora, InterMarcheBok, InterMarchePrzod];
 
 InterMarche.addEventListener("click", function () {
@@ -49,9 +50,37 @@ InterMarche.addEventListener("click", function () {
             element.style = "";
         }
     });
+    elementyPepCo.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            PepCoInfo.classList.add("zniknij");
+        };
+    });
+    elementyMartesSport.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            MartesSportInfo.classList.add("zniknij");
+        };
+    });
+    elementyCCC.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            CCCInfo.classList.add("zniknij");
+        };
+    });
+    elementyNeoNet.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            NeoNetInfo.classList.add("zniknij");
+        };
+    });
 });
 
-var CCCButton = document.getElementById("CCC");
+// var CCCButton = document.getElementById("CCC");
 var elementyCCC = [CCCGora, CCCBok, CCCPrzod];
 
 CCC.addEventListener("click", function () {
@@ -69,9 +98,37 @@ CCC.addEventListener("click", function () {
             element.style = "";
         }
     });
+    elementyPepCo.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            PepCoInfo.classList.add("zniknij");
+        };
+    });
+    elementyMartesSport.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            MartesSportInfo.classList.add("zniknij");
+        };
+    });
+    elementyInterMarche.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            InterMarcheInfo.classList.add("zniknij");
+        };
+    });
+    elementyNeoNet.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            NeoNetInfo.classList.add("zniknij");
+        };
+    });
 });
 
-var MartesSportButton = document.getElementById("MartesSport");
+// var MartesSportButton = document.getElementById("MartesSport");
 var elementyMartesSport = [MartesSportGora, MartesSportBok, MartesSportPrzod];
 
 MartesSport.addEventListener("click", function () {
@@ -89,14 +146,42 @@ MartesSport.addEventListener("click", function () {
             element.style = "";
         }
     });
+    elementyPepCo.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            PepCoInfo.classList.add("zniknij");
+        };
+    });
+    elementyInterMarche.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            InterMarcheInfo.classList.add("zniknij");
+        };
+    });
+    elementyCCC.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            CCCInfo.classList.add("zniknij");
+        };
+    });
+    elementyNeoNet.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            NeoNetInfo.classList.add("zniknij");
+        };
+    });
 });
 
-var NeoNetButton = document.getElementById("NeoNet");
+// var NeoNetButton = document.getElementById("NeoNet");
 var elementyNeoNet = [NeoNetGora, NeoNetBok, NeoNetPrzod];
 
 NeoNet.addEventListener("click", function () {
 
-        elementyNeoNet.forEach(function (element, index, array) {
+    elementyNeoNet.forEach(function (element, index, array) {
         if (element.classList.contains("moveDown")) {
             element.classList.remove("moveDown");
             element.classList.add("moveUp");
@@ -109,9 +194,37 @@ NeoNet.addEventListener("click", function () {
             element.style = "";
         }
     });
+    elementyPepCo.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            PepCoInfo.classList.add("zniknij");
+        };
+    });
+    elementyMartesSport.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            MartesSportInfo.classList.add("zniknij");
+        };
+    });
+    elementyInterMarche.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            InterMarcheInfo.classList.add("zniknij");
+        };
+    });
+    elementyCCC.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            CCCInfo.classList.add("zniknij");
+        };
+    });
 });
 
-var PepCoButton = document.getElementById("PepCo");
+// var PepCoButton = document.getElementById("PepCo");
 var elementyPepCo = [PepCoGora, PepCoBok, PepCoPrzod]; //these are 3 elements from SVG that define one shop
 
 PepCo.addEventListener("click", function () {
@@ -129,6 +242,71 @@ PepCo.addEventListener("click", function () {
             element.style = "";
         }
     });
+    elementyMartesSport.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            MartesSportInfo.classList.add("zniknij");
+        };
+    });
+    elementyInterMarche.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            InterMarcheInfo.classList.add("zniknij");
+        };
+    });
+    elementyCCC.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            CCCInfo.classList.add("zniknij");
+        };
+    });
+    elementyNeoNet.forEach(function (element, index, array) {
+        if (element.classList.contains("moveDown")) {
+            element.classList.remove("moveDown");
+            element.classList.add("moveUp");
+            NeoNetInfo.classList.add("zniknij");
+        };
+    });
+});
+
+
+var NeoNetX = document.getElementById("NeoNetX"); 
+NeoNetX.addEventListener("click", function () {
+    elementyNeoNet.forEach(function (element, index, array) {
+        element.classList.add("moveUp");
+        NeoNetInfo.classList.add("zniknij");
+});
+elementyPepCo.forEach(function (element, index, array) {
+    if (element.classList.contains("moveDown")) {
+        element.classList.remove("moveDown");
+        element.classList.add("moveUp");
+        PepCoInfo.classList.add("zniknij");
+    };
+});
+elementyMartesSport.forEach(function (element, index, array) {
+    if (element.classList.contains("moveDown")) {
+        element.classList.remove("moveDown");
+        element.classList.add("moveUp");
+        MartesSportInfo.classList.add("zniknij");
+    };
+});
+elementyInterMarche.forEach(function (element, index, array) {
+    if (element.classList.contains("moveDown")) {
+        element.classList.remove("moveDown");
+        element.classList.add("moveUp");
+        InterMarcheInfo.classList.add("zniknij");
+    };
+});
+elementyCCC.forEach(function (element, index, array) {
+    if (element.classList.contains("moveDown")) {
+        element.classList.remove("moveDown");
+        element.classList.add("moveUp");
+        CCCInfo.classList.add("zniknij");
+    };
+});
 });
 
 var MartesSportX = document.getElementById("MartesSportX"); 
@@ -136,14 +314,6 @@ MartesSportX.addEventListener("click", function () {
     elementyMartesSport.forEach(function (element, index, array) {
         element.classList.add("moveUp");
         MartesSportInfo.classList.add("zniknij");
-});
-});
-
-var NeoNetX = document.getElementById("NeoNetX"); 
-NeoNetX.addEventListener("click", function () {
-    elementyNeoNet.forEach(function (element, index, array) {
-        element.classList.add("moveUp");
-        NeoNetInfo.classList.add("zniknij");
 });
 });
 
@@ -171,10 +341,3 @@ PepCoX.addEventListener("click", function () {
 });
 });
 
-// switch (element) {
-// case 1: if (element.classList.contains("moveDown")) {
-//     ShopsButton.classList.remove("moveDown");
-//     element.classList.add("moveDown")}
-//     break;
-// case 2: 
-// }
