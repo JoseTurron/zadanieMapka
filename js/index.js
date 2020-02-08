@@ -42,11 +42,13 @@ InterMarche.addEventListener("click", function () {
             element.classList.remove("moveDown");
             element.classList.add("moveUp");
             InterMarcheInfo.classList.add("zniknij");
+            // InterMarcheInfo.classList.add("fadeOut");
             element.style = "";
         } else {
             element.classList.remove("moveUp");
             element.classList.add("moveDown");
             InterMarcheInfo.classList.remove("zniknij");
+            InterMarcheInfo.classList.add("fadeIn");
             element.style = "";
         }
     });
@@ -95,6 +97,7 @@ CCC.addEventListener("click", function () {
             element.classList.remove("moveUp");
             element.classList.add("moveDown");
             CCCInfo.classList.remove("zniknij");
+            CCCInfo.classList.add("fadeIn");
             element.style = "";
         }
     });
@@ -143,6 +146,7 @@ MartesSport.addEventListener("click", function () {
             element.classList.remove("moveUp");
             element.classList.add("moveDown");
             MartesSportInfo.classList.remove("zniknij");
+            MartesSportInfo.classList.add("fadeIn");
             element.style = "";
         }
     });
@@ -191,6 +195,7 @@ NeoNet.addEventListener("click", function () {
             element.classList.remove("moveUp");
             element.classList.add("moveDown");
             NeoNetInfo.classList.remove("zniknij");
+            NeoNetInfo.classList.add("fadeIn");
             element.style = "";
         }
     });
@@ -239,6 +244,7 @@ PepCo.addEventListener("click", function () {
             element.classList.remove("moveUp");
             element.classList.add("moveDown");
             PepCoInfo.classList.remove("zniknij");
+            PepCoInfo.classList.add("fadeIn");
             element.style = "";
         }
     });
